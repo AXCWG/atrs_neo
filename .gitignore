@@ -1,0 +1,12 @@
+.vscode
+log.txt
+game/saves
+/game/cache
+/game/.DS_Store
+/errors.txt
+/game/script.rpyc
+.DS_Store
+*.rpyc
+*.rpyb
+traceback.txt
+
