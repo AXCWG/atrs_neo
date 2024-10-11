@@ -1,0 +1,38 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="400" d:DesignHeight="600"
+        x:Class="Launcher.MainWindow"
+		Width="400" Height="600" CanResize="False"
+        Title="Launcher">
+	<Window.Styles>
+		<Style Selector="TextBox, Button">
+			<Setter Property="Margin" Value="0,5,0,0"/>
+			<Setter Property="Height" Value="45"/>
+		</Style>
+	</Window.Styles>
+	<Grid Margin="20" RowDefinitions="*,*" ShowGridLines="True">
+
+
+
+		<StackPanel>
+			<Label Content="ATRS-NEO" HorizontalAlignment="Center" FontSize="25"/>
+				
+			
+			<Label Content="v0.1.0" HorizontalAlignment="Center"/>
+		</StackPanel>
+
+		<DockPanel Grid.Row="1" VerticalAlignment="Bottom">
+			<StackPanel  DockPanel.Dock="Bottom" >
+
+				<TextBox x:Name="pathbox" VerticalContentAlignment="Center"></TextBox>
+				<Button x:Name="checkupdate">Check Update</Button>
+				<Button x:Name="update" IsEnabled="False">Update</Button>
+				<Button x:Name="start" >Start</Button>
+				<Button x:Name="remove" IsEnabled="False" Click="Button_Click">Remove</Button>
+			</StackPanel>
+		</DockPanel>
+
+	</Grid>
+</Window>
